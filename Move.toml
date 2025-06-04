@@ -1,0 +1,21 @@
+[package]
+name    = "BiotonicFirstContact"
+version = "0.1.0"
+
+[addresses]
+bioshard  = "0x7fc6917ccc824c4effd5f67dfac36fe5f78fbfdc1e1039d4d538b8f797f61cdf"
+prototype = "0x7fc6917ccc824c4effd5f67dfac36fe5f78fbfdc1e1039d4d538b8f797f61cdf"
+
+# framework / std (all at 0x1)
+aptos_framework = "0x1"
+aptos_std       = "0x1"
+
+# digital-asset helpers (0x4)
+aptos_token_objects = "0x4"
+move_stdlib         = "0x4"
+
+[dependencies]
+AptosFramework    = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "devnet", subdir = "aptos-move/framework/aptos-framework" }
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "devnet", subdir = "aptos-move/framework/aptos-token-objects" }
+MoveStdlib        = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "devnet", subdir = "aptos-move/framework/move-stdlib" }
+AptosStdlib       = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "devnet", subdir = "aptos-move/framework/aptos-stdlib" }

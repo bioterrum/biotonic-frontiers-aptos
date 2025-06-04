@@ -1,0 +1,10 @@
+.env
+.sqlx
+.github
+.aptos
+
+*.lock
+*.log
+*.txt
+
+build/
